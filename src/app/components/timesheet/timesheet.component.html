@@ -1,1 +1,14 @@
-<p>timesheet works!</p>
+<div class="main-container">
+    <div class="cards">
+        <h2>{{department.name}}</h2>
+        <mat-card>
+            <mat-form-field>
+                <input matInput [formControl]="employeeNameFC" placeholder="Employee Name" type="text">
+            </mat-form-field>
+            <button mat-mini-fab color="primary" (click)="addEmployee()">
+                <mat-icon>add</mat-icon>
+            </button>
+            <div>{{employess | json}}</div>
+        </mat-card>
+    </div>
+</div>
